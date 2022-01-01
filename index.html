@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Coffee Story</title>
+
+    <style>
+        label {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 id='titleofapp'>Coffee Story</h1>
+
+    <form class='form'>
+        <h2 id='subtitlemessage'>What are your preferences?</h2><br>
+
+
+
+
+        <div id='user-input-info'>
+            <!-- Add fullname-->
+            <label for='fullname' class='labelsforinput'>Enter Name:</label>
+
+            <input class='inputs' required type="text" id="fullname" name='fullname'
+                placeholder="Full Name" /><br><br><br>
+
+
+
+            <!-- Add email
+            <label for='email'>Enter Email:</label>
+
+            <input class='inputs' required type="text" id="email" name='email' placeholder="Enter Email" /><br><br><br>
+
+
+            Add phone
+            <label for='phone'>Enter Telephone:</label>
+
+
+            <input class='inputs' name='phone' type="text" id="phone" placeholder="Enter Telephone" /><br><br><br> -->
+
+
+            <!-- Add Search-->
+            <label for='message' class='labelsforinput'>Search Coffees Flavors:</label>
+
+
+            <input class='inputs' type="text" id="search" placeholder="Fruity" name='search' /><br><br><br>
+
+
+        </div>
+
+
+        <!-- Add a checkbox input with the id set to 'checkbox' -->
+        <div class='firstoptions' id=chex>
+            <h2>Tell us about how experienced you are:</h2>
+            <input type="radio" name="radioexp" id='radio1' value='new' /> new to coffee<br>
+
+
+            <input type="radio" name="radioexp" id='radio2' value='interm' /> coffee and I have an on and off
+            relationship<br>
+
+            <input type="radio" name="radioexp" id='radio3' value='highexp' /> coffee's my best friend<br><br>
+
+        </div><br>
+
+
+
+
+
+        <!-- Add an input with the type set to 'submit' -->
+        <div class='coffeefind'>
+            <input type="submit" value="Find Me Coffee!" />
+        </div>
+
+
+
+
+    </form>
+</body>
+
+</html>
