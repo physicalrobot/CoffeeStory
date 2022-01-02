@@ -1,38 +1,28 @@
 body{
     background-image: url('src/images/WallpaperDog-20495746.jpg');
     background-size: cover;
+    background-repeat: repeat-y; 
     color:white
-    
-    
 }
+
 .form{
-    margin-left: 70%;
+
+    margin-left: 70.5%;
     margin-right: auto;
     width: 28em;    
     justify-content: center;
-    background:rgba(71, 54, 54, 0.6) 
-
+    background:rgba(71, 54, 54, 0.6);
+    position:absolute;
+    /* border: 5px solid burlywood ; */
 }
-
 
 .form label{
     width: 200px;
     height: 20px;
     margin-right:2%;
     margin-left:5%;
-
-
-
 }
-/* #user-input-info{
-margin: auto;
-text-align: center;
-border: 3px solid hsl(177, 100%, 50%);
-padding: 1px; 
-/* width: 200px;
-border: 3px solid hsl(177, 100%, 50%);
-padding: 1px; 
-} */
+
 
 
 h1{
@@ -40,7 +30,6 @@ h1{
     font-family: 'Moon Dance', cursive;
     font-size: 40px;
     background:hsl(0, 0%, 0%,.4) 
-
 }
 
 
@@ -53,36 +42,42 @@ h2{
 }
 
 #titleofapp{
-    margin: left;
+    margin: auto;
     width: 65%;
     padding: 10px;
-    border: 5px solid burlywood ;
+    border: 5px solid #c79350 ;
 
 }
+
  #subtitlemessage{
     padding-top: 32px;
-  
+    font-size:30px;
 }
 
 .coffeefind{
     text-align: center;
     padding-bottom: 32px;
-    
+    font-family: 'Moon Dance', cursive;
 }
-
 
 .firstoptions{
     width: 200px;
     height: 200px;
     padding: 10px;
     border: 5px solid burlywood ;
-
 }
-
 
 #chex {
     margin-left: auto;
     margin-right: auto;
     width: 20em    
-    
+}
+
+#contentloadsection{
+    margin: left;
+    width: 69.90%;
+    padding: 10px;
+    background:rgba(71, 54, 54, 0.6) ;
+    text-align: center;
+    /* border: 5px solid burlywood ; */
 }
