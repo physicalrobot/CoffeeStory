@@ -28,25 +28,26 @@
 
     <form class='form' name='myform' id='myform'>
 
-
+        <!-- Coffee Lessons Sections -->
 
         <br><br><br>
         <div id='user-input-info'>
             <h2 id='subtitlemessage'>Learn About Your Coffee!</h2>
 
 
-            <!-- Add fullname-->
-            <label for='exp' class='labelsforinput'>Experience Level:</label>
 
-            <input class='inputs' type="text" id="exp" name='exp'
-                placeholder="Novice/Intermediate/Expert" /><br><br><br>
-
-
-            <!-- Add Search
-            <label for='message' class='labelsforinput'>Search Coffees Flavors:</label>
+            <div id='zerooptions'>
+                <div id='radiobuttons'>
+                    <input type="radio" name="radioexp" id='radio1' value='new' /> Introduction<br>
 
 
-            <input class='inputs' type="text" id="search" placeholder="Fruity" name='search' /><br><br><br> -->
+                    <input type="radio" name="radioexp" id='radio2' value='interm' /> Find Your Taste <br>
+
+
+                    <input type="radio" name="radioexp" id='radio3' value='highexp' /> The Perfect Pour
+                    Over<br><br>
+                </div>
+            </div>
 
 
         </div><br>
@@ -56,41 +57,28 @@
             <input name='lessbutton' id='lessbutton' type="button" value="Find Out More!" onclick='LessOn()' />
         </div>
 
+        <!-- Recipes Section -->
 
-
-        <!-- Add a checkbox input with the id set to 'checkbox' -->
         <div class='firstoptions' id=chex>
             <h2 style='font-size: 50px;'>How do you like your coffee?</h2><br>
 
 
-            <div id='radiobuttons'>
+            <div id='checkbuttons'>
 
                 <input type="checkbox" name="check1" id='check1' value='new' /> cold 🥛<br><br>
 
                 <input type="checkbox" name="check2" id='check2' value='interm' /> hot ☕ <br>
 
-                <!-- 
-                <input type="radio" name="radioexp" id='radio1' value='new' /> light<br>
 
-
-                <input type="radio" name="radioexp" id='radio2' value='interm' /> medium<br>
-
-
-                <input type="radio" name="radioexp" id='radio3' value='highexp' /> dark<br><br> -->
 
             </div>
 
 
         </div><br>
 
-
-
-        <!-- Add an input with the type set to 'submit' -->
-
-
         <div class='coffeefind'>
             <input name='findcoffeebutton' id='findcoffeebutton' type="button" value="Find Me Coffee!"
-                onclick='OnSubmitForm()' />
+                onclick='ColdOrHot()' />
         </div>
 
 
@@ -98,7 +86,7 @@
 
 
 
-
+    <!-- Map Section -->
     <div id='contentloadsection'>
         <br><br><br><br>
 
@@ -109,7 +97,6 @@
                 <input id="pac-input" class="controls" type="text" placeholder="Search Box" /><br><br>
 
                 <div id='map'></div>
-                <!-- <input class='inputs' id='input' style='height:px; width: 400px'> -->
 
                 <script async
                     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxCI_Q2dHxOD11CyW_1JBsa5wE5k1RF4I&callback=initAutocomplete&libraries=places">
@@ -125,7 +112,7 @@
         <br>
 
         <div id='contentinfobody'>
-            <h2 id='biggiesmalls'>Introduction</h2>
+            <h2 id='beginnerinfo'>Introduction</h2>
             <br>
             <img src="src/images/coffeepile.jpg" alt="A Pile of Coffee" width="900" height="500">
             <br>

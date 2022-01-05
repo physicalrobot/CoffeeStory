@@ -105,8 +105,11 @@ function initAutocomplete() {
         map.fitBounds(bounds);
     });
 }
-//-------------------------------------------------------
-function OnSubmitForm() {
+
+
+
+//---------------------Buttons---------------------------------
+function ColdOrHot() {
     var experience = document.getElementById('exp');
     var check1 = document.getElementById('check1');
     var check2 = document.getElementById('check2');
@@ -121,6 +124,10 @@ function OnSubmitForm() {
         console.log(check2.checked)
         window.location.hash = 'hotcoffeerec'
     }
+    else if (check2.checked && check1.checked) {
+
+        window.location.hash = 'hotcoffeerec'
+    }
     form.reset();
 
 }
@@ -128,16 +135,22 @@ function OnSubmitForm() {
 
 function LessOn() {
     var experience = document.getElementById('exp');
-    var check1 = document.getElementById('check1');
-    var check2 = document.getElementById('check2');
-    var button = document.getElementById('findcoffeebutton');
+    var rad1 = document.getElementById('rad1');
+    var rad2 = document.getElementById('rad2');
+    var rad3 = document.getElementById('rad3');
+    var button = document.getElementById('lessbutton');
     var form = document.getElementById('myform')
 
-    if (exp.value == 'Novice') {
-        window.location.hash = 'biggiesmalls'
-    } else if (exp.value == 'Intermediate') {
+    if (radio1.checked == true) {
+        console.log(radio1.checked)
+        window.location.hash = 'beginnerinfo'
+    }
+    else if (radio2.checked == true) {
+        console.log(radio2.checked)
         window.location.hash = 'mediuminfo'
-    } else if (exp.value == 'Expert') {
+    }
+    else if (radio3.checked == true) {
+        console.log(radio3.checked)
         window.location.hash = 'expertinfo'
     }
     form.reset();
