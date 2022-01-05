@@ -1,39 +1,48 @@
+*{
+    align-content: center;
+    text-align: center;
+}
 
 body{
     background-image: url('src/images/WallpaperDog-20495746.jpg');
     background-size: cover;
     background-repeat: repeat-y; 
     color:white
+    
+}
+.inputs{
+    width:180px;
+    height:30px;
+    background-color: burlywood;
 }
 
 #pac-input {
-    background-color: #fff;
+    background-color: burlywood;
     font-family: Roboto;
     font-size: 15px;
     font-weight: 300;
+    color:white;
     margin-left: 20px;
     padding: 0 11px 0 13px;
     text-overflow: ellipsis;
     width: 400px;
+    height:40px
   }
 
 
-.form{
-
-    margin-left: 70.5%;
-    margin-right: auto;
-    width: 25.5em;    
-    justify-content: center;
+ .form{
     background:rgba(71, 54, 54, 0.6);
-    position:absolute;
-    /* border: 5px solid burlywood ; */
-}
+    }
+
 
 .form label{
-    width: 190px;
+    width: 70%;
     height: 20px;
     margin-right:1%;
     margin-left:5%;
+    text-align: right;
+    display: inline-block;
+    font-size: 32px;
 }
 
 
@@ -41,15 +50,16 @@ body{
 h1{
     text-align: center;
     font-family: 'Moon Dance', cursive;
-    font-size: 40px;
-    
+    font-size: 80px;
+    background:rgba(71, 54, 54, 0.5) ;
+
 }
 
 
 h2{
-    font-family: 'Moon Dance', cursive;
+font-family: 'Moon Dance', cursive;
    text-align:center   ;
-   font-size:25px;
+   font-size:50px;
 
    
 }
@@ -65,38 +75,105 @@ h2{
 }
 
  #subtitlemessage{
-    padding-top: 32px;
-    font-size:30px;
+    font-size:50px;
+    padding-left: 350px;
+
 }
 
 .coffeefind{
+  
     text-align: center;
-    padding-bottom: 32px;
-    font-family: 'Moon Dance', cursive;
+}
+
+
+
+#findcoffeebutton{
+    padding:14px 40px;
+    border-radius: 12px;
+    font-size: 30px;
+    font-family: 'Moon Dance', bold;
+    font-weight: bolder;
+    background:rgba(71, 54, 54, 0.7) ;
+    color:white;
+    border: 5px solid burlywood ;
+    
+
 }
 
 .firstoptions{
-    width: 200px;
-    height: 200px;
+    width: 600px;
+    height: 300px;
+    font-size: 32px;
     padding: 10px;
+    margin-top: 5%;
     border: 5px solid burlywood ;
+    background:rgba(71, 54, 54, 0.7) ;
+
+}
+
+
+
+#user-input-info{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 400px;
+    border: 5px solid burlywood ;
+    text-align: left;
+    background:rgba(71, 54, 54, 0.7) ;
+    padding-right: 350px;
+
 }
 
 #chex {
     margin-left: auto;
     margin-right: auto;
-    width: 20em    
+    width: 20em;    
+    height: 400px
 }
 
+
 #contentloadsection{
-    margin: left;
-    width: 69.90%;
-    padding: 10px;
+    padding: 16px;
     background:rgba(71, 54, 54, 0.6) ;
-    text-align: center;
+    
+
     /* border: 5px solid burlywood ; */
 }
 
+#radiobuttons{
+    display: inline-block;
+    margin: auto;
+    text-align: left;
+}
+
+
+
+
+#stuffaboutcoffee{
+    font-weight: bold;
+    text-align: left;
+    margin:auto;
+    font-size: 20px;
+    width: 80%;
+}
+
+#contentmapbody{
+    margin-left: auto;
+    margin-right: auto;
+    height: 60%;
+    width: 80%;
+    border: 5px solid burlywood ;
+    border-radius: 12px;
+    background:rgba(71, 54, 54, 0.5) ;
+}
+
+
+
+
 #map{
     color:black;
+    margin: auto;
+    height: 500px;
+    width: 80%;
 }
