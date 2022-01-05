@@ -106,7 +106,43 @@ function initAutocomplete() {
     });
 }
 //-------------------------------------------------------
+function OnSubmitForm() {
+    var experience = document.getElementById('exp');
+    var check1 = document.getElementById('check1');
+    var check2 = document.getElementById('check2');
+    var button = document.getElementById('findcoffeebutton');
+    var form = document.getElementById('myform')
 
+    if (check1.checked == true) {
+        console.log(check1.checked)
+        window.location.hash = 'coldcoffeerec'
+    }
+    else if (check2.checked == true) {
+        console.log(check2.checked)
+        window.location.hash = 'hotcoffeerec'
+    }
+    form.reset();
+
+}
+
+
+function LessOn() {
+    var experience = document.getElementById('exp');
+    var check1 = document.getElementById('check1');
+    var check2 = document.getElementById('check2');
+    var button = document.getElementById('findcoffeebutton');
+    var form = document.getElementById('myform')
+
+    if (exp.value == 'Novice') {
+        window.location.hash = 'biggiesmalls'
+    } else if (exp.value == 'Intermediate') {
+        window.location.hash = 'mediuminfo'
+    } else if (exp.value == 'Expert') {
+        window.location.hash = 'expertinfo'
+    }
+    form.reset();
+
+}
 
 
 
