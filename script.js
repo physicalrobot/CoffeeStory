@@ -29,6 +29,30 @@ function initAutocomplete() {
 
     let markers = [];
 
+
+    if (navigator.geolocation) {
+        console.log('geolocation is here');
+
+        navigator.geolocation.getCurrentPosition((loc) => {
+            location.lat = loc.coords.latitude;
+            location.lng = loc.coords.longitude;
+
+            //write the new map
+            map = new google.maps.Map(document.getElementById('map'), options);
+
+        },
+            (err) => {
+                console.log('user clicked no');
+                map = new
+                    google.maps.Map(document.getElementById('map'), options);
+
+            })
+    } else {
+        console.log('geolocation not supported :(');
+        map = new
+            google.maps.Map(document.getElementById('map'), options);
+    }
+
     // Listen for the event fired when the user selects a prediction and retrieve
     // more details for that place.
     searchBox.addListener("places_changed", () => {
@@ -45,28 +69,7 @@ function initAutocomplete() {
         markers = [];
 
 
-        if (navigator.geolocation) {
-            console.log('geolocation is here');
 
-            navigator.geolocation.getCurrentPosition((loc) => {
-                location.lat = loc.coords.latitude;
-                location.lng = loc.coords.longitude;
-
-                //write the new map
-                map = new google.maps.Map(document.getElementById('map'), options);
-
-            },
-                (err) => {
-                    console.log('user clicked no');
-                    map = new
-                        google.maps.Map(document.getElementById('map'), options);
-
-                })
-        } else {
-            console.log('geolocation not supported :(');
-            map = new
-                google.maps.Map(document.getElementById('map'), options);
-        }
 
 
         // For each place, get the icon, name and location.
