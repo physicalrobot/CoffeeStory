@@ -116,15 +116,15 @@ function ColdOrHot() {
     var button = document.getElementById('findcoffeebutton');
     var form = document.getElementById('myform')
 
-    if (check1.checked == true) {
+    if (check1.checked == true && check2.checked == false) {
         console.log(check1.checked)
         window.location.hash = 'coldcoffeerec'
     }
-    else if (check2.checked == true) {
+    else if (check2.checked == true && check1.checked == false) {
         console.log(check2.checked)
         window.location.hash = 'hotcoffeerec'
     }
-    else if (check2.checked && check1.checked) {
+    else if (check1.checked && check2.checked == true) {
 
         window.location.hash = 'hotcoffeerec'
     }
