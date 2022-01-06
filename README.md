@@ -7,12 +7,16 @@ You can also look through coffee recipes depending on whether you like drinking 
 
 Under the recipe option I'm using the google maps api to help navigate the user to the closest coffee shop to them. After allowing the page to use your geolocation, you can search for nearby cafes simply by using the search bar. 
 
+To find out more about how I put it together feel free to check out my blog post: 
+https://physicalrobot.github.io/code_blog/code/CoffeeStory/
+
+
 
 
 
 # Image Sources:
 
-Introduction coffee cup image:https://enjoyjava.com/how-many-cups-of-coffee-in-a-pound/
+Introduction coffee cup image: https://enjoyjava.com/how-many-cups-of-coffee-in-a-pound/
 
 The coffee taste wheel image is from The Specialty Coffee Association (SCA). You can learn more about them here:
 https://sca.coffee/about
