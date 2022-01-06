@@ -1,6 +1,7 @@
 //google map api------------------------------------------------------------------------------
-function initAutocomplete() {
 
+
+function geoLocation() {
     var location = {
         lat: 40.70250918583776,
         lng: -73.90170101739545
@@ -12,10 +13,43 @@ function initAutocomplete() {
         mapTypeId: "roadmap",
 
     }
+    if (navigator.geolocation) {
+        console.log('geolocation is here');
+
+        navigator.geolocation.getCurrentPosition((loc) => {
+            location.lat = loc.coords.latitude;
+            location.lng = loc.coords.longitude;
+
+            //write the new map
+            map = new google.maps.Map(document.getElementById('map'), options);
+            initAutocomplete();
 
 
-    const map = new google.maps.Map(document.getElementById('map'), options);
+        },
+            (err) => {
+                console.log('user clicked no');
+                const map = new
+                    google.maps.Map(document.getElementById('map'), options);
+                initAutocomplete();
 
+
+            })
+    } else {
+        console.log('geolocation not supported :(');
+        map = new
+            google.maps.Map(document.getElementById('map'), options);
+        initAutocomplete();
+
+    }
+
+    // const map = new google.maps.Map(document.getElementById('map'), options);
+
+
+
+}
+
+
+function initAutocomplete() {
 
     // Create the search box and link it to the UI element.
     const input = document.getElementById("pac-input");
@@ -30,28 +64,6 @@ function initAutocomplete() {
     let markers = [];
 
 
-    if (navigator.geolocation) {
-        console.log('geolocation is here');
-
-        navigator.geolocation.getCurrentPosition((loc) => {
-            location.lat = loc.coords.latitude;
-            location.lng = loc.coords.longitude;
-
-            //write the new map
-            map = new google.maps.Map(document.getElementById('map'), options);
-
-        },
-            (err) => {
-                console.log('user clicked no');
-                map = new
-                    google.maps.Map(document.getElementById('map'), options);
-
-            })
-    } else {
-        console.log('geolocation not supported :(');
-        map = new
-            google.maps.Map(document.getElementById('map'), options);
-    }
 
     // Listen for the event fired when the user selects a prediction and retrieve
     // more details for that place.
@@ -108,6 +120,12 @@ function initAutocomplete() {
         map.fitBounds(bounds);
     });
 }
+
+
+
+
+
+
 
 
 
